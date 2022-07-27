@@ -1,0 +1,39 @@
+2022-07-18 09:53:25 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SCHEMA_MIGRATIONS" not found; SQL statement:
+SELECT 1 FROM schema_migrations [42102-200]
+2022-07-26 07:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""CREDIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:15:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "DESCRIPTION VARCHAR(60)": "'a very very long long long long asssssssssss text of wordssssss' (63)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22001-200]
+2022-07-26 07:24:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:26:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:26:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:27:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:29:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:29:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]
+2022-07-26 07:30:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (CREDITOR: ""DEBIT"" INT)"; SQL statement:
+INSERT INTO creditor (description, credit, debit)
+VALUES(?, ?, ?) [22018-200]

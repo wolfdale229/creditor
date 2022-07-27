@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content">
+      <div class="columns is-centered">
+          <div class="column is-two-thirds">
+              <div class="columns">
+                  <div class="column">
+                      <table class="table is-hoverable is-fullwidth">
+                          <thead>
+                              <tr>
+                                  <th class="is-narrow">Id</th>
+                                  <th class="is-narrow">Description</th>
+                                  <th class="is-narrow">Credit</th>
+                                  <th class="is-narrow">Debit</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {% for item in items %}
+                              <tr>
+                                  <td class="is-narrow">{{item.id}}</td>
+                                  <td class="is-narrow"> {{item.description}}</td>
+                                  <td class="is-narrow">{{item.credit}}</td>
+                                  <td class="is-narrow">{{item.debit}} </td>
+                                  <td class="is-narrow">
+                                      <button class="button is-small" href="edit-customer.html">Edit</button>
+                                      <button class="button is-small is-danger">Delete</button>
+                                  </td>
+                              </tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+              <div class="field" >
+              </div>
+              <div class="columns">
+                  <div class="column">
+                      <form method="POST" id="" action="/create">
+                          {% csrf-field %}
+                          <div class="field">
+                              <table>
+                                  <thead>
+                                      <tr>
+                                          <td>
+                                              <label class="label"  for="description">Description</label>
+                                          </td>
+                                          <td>
+                                              <label class="label"  for="credit">Credit</label>
+                                          </td>
+                                          <td>
+                                              <label class="label"  for="debit">Debit</label>
+                                          </td>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>
+                                              <input class="input"
+                                                     type="text"
+                                                     name="description"
+                                                     value="{{description}}" />
+                                          </td>
+                                          <td>
+                                              <input class="input"
+                                                     type="number"
+                                                     placeholder="0"
+                                                     name="credit"
+                                                     value="{{credit}}" />
+                                          </td>
+                                          <td>
+                                              <input class="input"
+                                                     type="number"
+                                                     placeholder="0"
+                                                     name="debit"
+                                                     value="{{debit}}" />
+                                          </td>
+                                          <tr>
+                                              <td>
+                                                  <input type="submit"
+                                                         class="button is-primary"
+                                                         value="save" />
+                                              </td>
+                                          </tr>
+                                          </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  {% endblock %}
+  
