@@ -1,7 +1,7 @@
 # creditor
-<<<<<<< HEAD
-simple RESTfull API in clojure implementing a simple credit and debit web application
+Simple RESTfull API in clojure implementing a simple credit and debit web application
 =======
+This is a CRUD application and any frontend clojure developer (beginner) can use it to develop their skills.
 
 generated using Luminus version "4.38"
 
